@@ -6,6 +6,10 @@ const value2 = document.getElementById("value2");
 const value3 = document.getElementById("value3");
 const btnReset = document.querySelector(".btn-reset");
 
+let audio = new Audio();
+audio.src = 'Roll.aac';
+
+
 
 btn.addEventListener('click', function(){
     const random1 = getRandomNumber1();
@@ -14,7 +18,7 @@ btn.addEventListener('click', function(){
     value1.textContent = random1;
     value2.textContent = random2;
     value3.textContent = random3;
-    
+    audio.play();
 });
 
 btnReset.addEventListener('click', function(){
